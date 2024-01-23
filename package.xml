@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>video_feed_stitcher</name>
+  <version>0.1.0</version>
+  <description>The video_feed_stitcher package</description>
+
+  <!-- One maintainer tag required, multiple allowed, one person per tag -->
+  <maintainer email="aditya.sivaraj@gmail.com">Aditya Sivaraj</maintainer>
+
+  <license>BSD</license>
+
+  <!-- Url tags are optional, but multiple are allowed, one per tag -->
+  <!-- Documentation URL -->
+  <!-- <url type="website">http://wiki.ros.org/image_concatenator</url> -->
+
+  <!-- Author tags are optional, multiple are allowed, one per tag -->
+  <author email="aditya.sivaraj@gmail.com">Aditya Sivaraj</author>
+
+  <!-- The *_depend tags are used to specify dependencies -->
+  <!-- Dependencies can be catkin packages or system dependencies -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>opencv</build_depend>
+  <build_depend>seven_robotics_msgs</build_depend>
+  <build_depend>seven_robot_utils</build_depend>
+  <build_depend>diagnostic_msgs</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <build_depend>rosbuild</build_depend>
+  <build_depend>rviz</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>image_geometry</build_depend>
+
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>image_transport</build_export_depend>
+  <build_export_depend>cv_bridge</build_export_depend>
+  <build_export_depend>sensor_msgs</build_export_depend>
+  <build_export_depend>opencv</build_export_depend>
+  <build_export_depend>seven_robotics_msgs</build_export_depend>
+  <build_export_depend>seven_robot_utils</build_export_depend>
+  <build_export_depend>diagnostic_msgs</build_export_depend>
+  <build_export_depend>dynamic_reconfigure</build_export_depend>
+  <build_export_depend>geometry_msgs</build_export_depend>
+  <build_export_depend>pluginlib</build_export_depend>
+  <build_export_depend>rosbuild</build_export_depend>
+  <build_export_depend>rviz</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+	<build_export_depend>message_generation</build_export_depend>
+  <build_export_depend>image_geometry</build_export_depend>
+
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>image_transport</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>opencv</exec_depend>
+  <exec_depend>seven_robotics_msgs</exec_depend>
+  <exec_depend>seven_robot_utils</exec_depend>
+  <exec_depend>diagnostic_msgs</exec_depend>
+  <exec_depend>dynamic_reconfigure</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>pluginlib</exec_depend>
+  <exec_depend>rosbuild</exec_depend>
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>image_geometry</exec_depend>
+
+  <!-- If this package is a metapackage then use the following template -->
+  <!-- <export> -->
+  <!--   <metapackage/> -->
+  <!-- </export> -->
+</package>
