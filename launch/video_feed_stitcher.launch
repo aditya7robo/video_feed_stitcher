@@ -1,0 +1,7 @@
+<launch>
+
+    <node name="image_rotator_node" pkg="video_feed_stitcher" type="image_rotator_node" output="screen"/>
+
+    <node name="video_feed_stitcher_node" pkg="video_feed_stitcher" type="video_feed_stitcher_node" output="screen"/>
+
+</launch>

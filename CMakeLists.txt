@@ -48,12 +48,19 @@ include_directories(
 
 ## Declare a C++ executable
 add_executable(${PROJECT_NAME}_node src/video_feed_stitcher.cpp)
+add_executable(image_rotator_node src/image_rotate.cpp)
 
 ## Add cmake target dependencies of the executable
 add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(image_rotator_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(${PROJECT_NAME}_node
+  ${catkin_LIBRARIES}
+  ${OpenCV_LIBRARIES}
+)
+
+target_link_libraries(image_rotator_node
   ${catkin_LIBRARIES}
   ${OpenCV_LIBRARIES}
 )
@@ -69,6 +76,10 @@ install(DIRECTORY include/${PROJECT_NAME}/
 
 ## Mark executables and/or libraries for installation
 install(TARGETS ${PROJECT_NAME}_node
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+install(TARGETS image_rotator_node
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
